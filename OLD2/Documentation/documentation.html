@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" async 
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<!-- SYNTAX HIGHLIGHTING CLASSES  -->
+<style type="text/css">
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:justify;
+    margin: 0 8%;
+    font-size: 14px;
+        background-color:white; 
+}
+
+a {
+   color: #1e6bb8;
+       text-decoration: none;
+}
+a:hover {
+       text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+}
+
+h1, h1 > a, h1 > a:link {
+        margin:0.67em 0;
+        padding: 0;
+        font-family: ;
+        color:#17365D;
+        font-size: 22px;
+        }
+
+h1 > a:hover, h1 > a:hover{
+color:#345A8A;
+} 
+
+h2, h2 > a, h2 > a, h2 > a:link {
+        margin:14px 0px 2px 0px;
+        padding: 0;
+        color:#345A8A;
+        font-size: 18px;
+        font-weight:bold;
+        }
+
+h3, h3 > a,h3 > a, h3 > a:link,h3 > a:link {
+        margin:14px 0px 0px 0px;
+        padding: 0;
+        color:#4F81BD;
+        font-size: 16px;
+        font-weight:bold;
+        }
+
+h4 {
+        margin:10px 0px 0px 0px;
+        padding: 0;
+        font-family: ;
+        font-size: 16px;
+        color:#4F81BD;
+        font-weight:bold;
+        font-style:italic;
+        }
+
+h5  {
+        font-size: 14px;
+        font-weight:normal;
+        color:#4F81BD;
+        }
+
+h6  {
+        font-size:14px;
+        font-weight:normal;
+        font-style:italic;
+        color:#4F81BD;
+        }
+
+p {
+        font-weight:normal;
+        font-size:14px;
+        line-height: 16px;
+        text-align:justify;
+        text-justify:inter-word;
+        margin:0 0 14px 0;
+        }
+
+.author {display:block;text-align:center;font-size:16px;margin-bottom:3px;}
+.date {display:block;text-align:center;font-size:12px;margin-bottom:3px;}
+.center, #center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+    -moz-box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+    box-shadow: 0px 0px 2px rgba( 0, 0, 0, 0.5 );
+
+    padding: 0px;
+    border-width: 0px;
+    border-style: solid;
+    cursor:-webkit-zoom-in;
+    cursor:-moz-zoom-in;
+    }
+
+td > p {padding:0; margin:0;}
+
+
+header {
+        font-size:28px;
+        padding-bottom:5px; 
+        margin:0;
+        padding-top:150px; 
+        font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-align:center;
+        display:block;
+        font-weight:bold;
+        }
+
+
+
+table {
+        border-collapse: collapse;
+        border-bottom:1px solid black;
+        padding:5px;
+        margin-top:5px;
+        margin-bottom: 16px;
+
+}
+.tble {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+}
+
+.tblecenter {
+        display:block;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        margin-bottom: 0px;
+        text-align:center;
+}
+
+span.tblecenter + table, span.tble + table, span.tble + img {
+        margin-top: 2px;
+}
+
+.figure, .caption {
+        text-align: center
+}
+
+th {
+        border-bottom:1px solid black;
+        border-top:1px solid black;
+        padding-right:20px;
+}
+
+td {
+        padding-right:20px;
+}
+
+pre code {
+       color: #567482;
+       font-size: 10px;
+       padding-top: 0;
+       padding-bottom: 0;
+       margin-top: 0;
+       margin-bottom: 0;
+      font-family: "menlo-regular","Consolas", "Liberation Mono", Menlo, Courier, monospace;
+   display: block;
+}
+
+code {
+   padding: 2px 4px;
+      font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+       font-size: 0.9rem;
+       color: #383e41;
+       background-color: #f3f6fa;
+   border-radius: 0.3rem; 
+}
+
+pre {
+   padding: 0.8rem ;
+      font: 1rem Consolas, "Liberation Mono", Menlo,  Courier, monospace;
+       margin-top: 0;
+       margin-bottom: 1rem;
+       color: #567482;
+   word-wrap: normal;
+   background-color: #f3f6fa;
+   border: solid 1px #dce6f0;
+   border-radius: 0.3rem; 
+}
+
+pre > code {
+   padding: 0;
+   margin: 0;
+   word-break: normal;
+}
+
+blockquote {
+       padding: 0 1rem;
+       margin-left: 0;
+       color: #819198;
+       border-left: 0.3rem solid #dce6f0;
+}
+
+img {
+        margin: 5px 0 5px 0;
+        padding: 0px;
+        cursor:-webkit-zoom-in;
+        cursor:-moz-zoom-in;
+        display:inline-block;
+        clear: both;
+        }
+
+hr {
+       height: 2px;
+       margin: 1rem 0;
+       background-color: #eff0f1;
+       border: 0; 
+}
+
+ul li {
+       font-size:14px;
+}
+
+</style>
+</head>
+<body>
+<h1 id="chase-experiment-manual">Chase Experiment Manual</h1>
+<p>An experiment made with PyGame.</p>
+<h2 id="installation">Installation</h2>
+<p>you need the following software packages:</p>
+<ul>
+<li><a href="http://www.python.org">Python 2.7 32bit</a></li>
+<li><a href="http://pygame.org">PyGame 1.9.1</a></li>
+<li><a href="http://docs.python-requests.org">requests</a></li>
+<li><a href="http://www.numpy.org/">numpy</a></li>
+</ul>
+<p>If you are a complete newbie, installing the packages required for running this experiment will keep you busy for a little while. I try to explain it &quot;as basic as possible&quot;, assuming you are a biggener user.</p>
+<p>First of all, you <strong>want to make sure that you install Python 32bit 2.7.12 or higher</strong>. Notice that I said <strong>32bit</strong>, even if your machine is <strong>64bit</strong> you still must install the <strong>32bit</strong> Python 2.7.12 or higher. You must not install Python 3!</p>
+<p>Next, you want to make sure that <strong>python is defined in your environment</strong>. This means that anytime you type <strong><code>python</code></strong> in your command line, python should be executed. However, if python is not in the <code>Path</code>, the command line will not recognize it. This is particularly a problem for Microsoft Windows users (<em>as usual, whenever we talk about problems, Microsoft shines like a diamond</em>!). There is two ways you can add python to the environment. The simplest way <strong>is to pay attention</strong> when you install Python 2.7. As shown in the image below, make sure <code>add python.exe to path</code> is selected. This option makes your life much easier but is not selected by default in the installation.</p>
+<div class="figure">
+<img src="..\resources\image\installer.png" />
+
+</div>
+<p>The second way is trickier. Microsoft users should open the <strong>System Properties</strong> and go to <strong>Advanced</strong> tab, and click on <strong>Environment Variables</strong>. A new windows will open, in the <strong>system variables</strong> click on <strong><code>Path</code></strong> and add the path to your Python directory which is something like:</p>
+<pre><code>C:\Python27</code></pre>
+<p><a href="http://pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/">This tutorial might be helpful!</a>. Then, also add the path to the <code>Scripts</code> Python directory which is something like:</p>
+<pre><code>C:\Python27\Scripts</code></pre>
+<p>Next, you will need to install a few required packages. The easiest way to install packages is using <strong><code>pip</code></strong>, which itself, needs an installation. <a href="https://pip.pypa.io/en/latest/installing/">See this tutorial about how to install <code>pip</code> script</a>. Since you have previously added the <code>Scripts</code> directory to the path environment, now you can use the <strong><code>pip</code></strong> command to install other packages. If you have installed Python 2.7.12, it already includes <strong>pip</strong> but you should update it. To do so, run the <strong>cmd</strong> and paste the following code in it:</p>
+<pre><code>python -m pip install --upgrade pip</code></pre>
+<p>Now, you can install <code>requests</code> from the command line:</p>
+<pre><code>pip install requests</code></pre>
+<p>You also will need <strong><code>pygame</code></strong>. Visit <a href="http://www.pygame.org/download.shtml" class="uri">http://www.pygame.org/download.shtml</a> and download the correct version of python for your OS.</p>
+<p>In addition, you also need <strong><code>numpy</code></strong> for doing some numeric manipulations on the trial numbers. The installation is just as before:</p>
+<pre><code>pip install numpy</code></pre>
+<h2 id="settings.cfg">Settings.cfg</h2>
+<p>The experiment's settings can be adjusted by updating the <strong><code>settings.cfg</code></strong> file. The file can change the following settings:</p>
+<table style="width:79%;">
+<colgroup>
+<col width="37%" />
+<col width="41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left"><strong>Configuration Argument</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left"><strong><code>screen_width</code></strong></td>
+<td align="left">takes an integer which defines the width of the screen in pixels</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>screen_height</code></strong></td>
+<td align="left">takes an integer which defines the height of the screen in pixels</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>FullScreen</code></strong></td>
+<td align="left">can be <code>True</code> or <code>False</code>. If set to <code>True</code> it makes the game fullscreen. Otherwise, the screen will appear with the specified width and height.<strong>If you set the game to full screen without increasing the width and height, the display will stretch</strong>.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>backgroundColor</code></strong></td>
+<td align="left">takes a vector of <strong>3 integers, separated by comma</strong> which represent an RGB values for defining the background color of the game. The default values are <code>100,100,100</code> which is light gray.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>fontColor</code></strong></td>
+<td align="left">takes a python color name which can be <code>black</code>, <code>white</code>, or any of the colors mentioned later in the documentation.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>mouseCursor</code></strong></td>
+<td align="left">can be <code>True</code> or <code>False</code>. If set to <code>True</code> the mouse curser appears during the trial. Otherwise it will be hidden during the trial.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>showTimer</code></strong></td>
+<td align="left">can be <code>True</code> or <code>False</code>. The experiment has a timer for tracking how long each trial lasts in terms of seconds. The timer can also be shown in the top-right corner of the screen if the value is set to <code>True</code>.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>gameover_sound</code></strong></td>
+<td align="left">The value can be <code>True</code> or <code>False</code>. When the trial ends, a buzz sound is played if the value is <code>True</code>.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>playerSpeed</code></strong></td>
+<td align="left">takes an integer which defines the movement speed of the player based on number of pixels. The default is <strong>5</strong> pixels</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>wolfSpeed</code></strong></td>
+<td align="left">takes a real number and defines the movement speed of the wolf and sheep.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>trialType</code></strong></td>
+<td align="left">a vector of &quot;0&quot; and &quot;1&quot; showing the overall number of trials (counting 0 &amp; 1) and whether a wolf exists or not (1 or 0 respectively). For example, if the experiment has 4 trials and only the first 2 trials have a wolf, the vector should be <code>1,1,0,0</code>. This option only specifies whether Wolf actually exists or not. It doesn't provide any information about the wolf's strategy.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>duration</code></strong></td>
+<td align="left">a vector of number of seconds that each trial lasts. For example, 30,10, ... <strong>the integers should be separated by comma</strong>.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>chaseRate</code></strong></td>
+<td align="left">a vector of chase probability per <code>turnRate</code>. <strong>the integer should be between 0 to 100 and separated by comma</strong>.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>chaseAngle</code></strong></td>
+<td align="left">a vector of chase angles for each trial. the integer can be between <code>1</code> ro <code>180</code>. <strong>the integers should be separated by comma</strong>. (<code>1</code> is practically straightline chase, given the size of the game objects and screen)</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>scapeAngle</code></strong></td>
+<td align="left">a vector of escape angles for each trial, only used when <code>randomPlayer</code> is <code>True</code>. the integer can be between <code>1</code> ro <code>180</code>. <strong>the integers should be separated by comma</strong>. (<code>1</code> is practically straightline chase, given the size of the game objects and screen)</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>killZone</code></strong></td>
+<td align="left">the radius of the death circle, i.e. the distance between the center of the coordinates of the <strong>Wolf</strong> and the <strong>player</strong> which ends the game, where the wolf is considered to win. The minimum <code>killZone</code> should be <strong>32</strong> which is the diameter of the circles.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>sheepNumber</code></strong></td>
+<td align="left">a vector of <strong>comma separated integers</strong> that specifies the number of sheep <strong>including the wolf</strong> who appear in the game.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>Radius</code></strong></td>
+<td align="left">is an integer which defines the radius of the circle where the sheep and wolf should be located around it. The larger the radius, the more time the wolf will require to approach the player and also, the more time it takes other sheep to get close to the player. If set to anything below <code>killZone</code> there will be a chance of failure right at the start of the trial.</td>
+</tr>
+<tr class="odd">
+<td align="left"><strong><code>turnRate</code></strong></td>
+<td align="left">is an integer which defines the number of seconds that it takes for sheep and the wolf to make a random turn. The default is 1 turn per second.</td>
+</tr>
+<tr class="even">
+<td align="left"><strong><code>randomPlayer</code></strong></td>
+<td align="left">can be <code>True</code> or <code>False</code>. If set to <code>True</code> the player will have a randomwalk similar to the other circles and the mouse will be disabled for moving the player during the trial.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="instructions">Instructions</h2>
+<p>To run the experiment in Microsoft Windows click on <strong>RUN.bat</strong> file.</p>
+<h2 id="available-colors">Available colors</h2>
+<p>For the <code>fotColor</code> you can pick any of the colors mentioned in the figure below. Write the name without any space in between, for example, <code>redorange</code> or <code>midnightblue</code>.</p>
+<div class="figure">
+<img src="..\resources\image\available%20colors.jpg" />
+
+</div>
+</body>
+</html>

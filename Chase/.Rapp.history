@@ -1,0 +1,13 @@
+getwd()
+?read.csv
+data = read.csv("data.csv", header=T)
+data
+#set the working directory#
+setwd("/Users/haghish/Dropbox/Company/Projects/2016/Chase")#
+#
+data = read.csv("data.csv", header=T)
+#set the working directory#
+setwd("/Users/haghish/Dropbox/Company/Projects/2016/Chase")#
+#
+data = read.csv("data.csv", header=T)#
+data

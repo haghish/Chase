@@ -1,0 +1,6 @@
+{smcl}
+{com}{sf}{ul off}{txt}
+{com}. //IMPORT README.md
+. qui log c
+{smcl}
+{com}{sf}{ul off}
