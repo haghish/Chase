@@ -4,7 +4,7 @@ This is a evolutionary psychology experiment designed in a 2D video game form. I
 
 ## Documentation
 
-When you download the repository, there is an HTML file that documents the experiment. you will find it in [`chas > documentation > documentation.html`](https://github.com/haghish/Chase/blob/master/Chase/Documentation/documentation.html). 
+When you download the repository, there is an HTML file that documents the experiment. you will find it in:   [`Chase > Documentation > documentation.html`](https://github.com/haghish/Chase/blob/master/Chase/Documentation/documentation.html). 
 
 ## About the experiment 
 Among several moving circles, one circle chases the participant based on a variety. This vide of algorithms. The participant has to move its circle with the mouse to stay away from the chasing circle, if the it is detected. If the chasing circle arrives within a particular distance from the player's circle, the game (trial) is over. 
