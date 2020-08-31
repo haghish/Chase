@@ -14,6 +14,6 @@ There is a configuration file that allows you to specify the number of trials, a
 
 ## License 
 
-Feel free to use/edit/manipulate this experiment
+MIT
 
  
