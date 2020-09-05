@@ -1,5 +1,5 @@
-Chase Experiment Manual
-=======================
+Chasing Detection Experiment
+============================
 
 This is a evolutionary psychology experiment designed in a 2D video game form. I used [pygame](https://www.pygame.org/) to develop the experiment because common tools for designing psychology experiment could not offer that much of flexibility for developing a videogame-like experiment. The experiment was developed for a scientific collaboration with [Prof. Robert Biegler](https://www.ntnu.edu/employees/robert.biegler)'s lab at the department of psychology at Norwegian University of Science and Technology. 
 
