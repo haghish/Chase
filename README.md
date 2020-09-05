@@ -1,7 +1,7 @@
 Chase Experiment Manual
 =======================
 
-This is a evolutionary psychology experiment designed in a 2D video game form. I used [pygame](https://www.pygame.org/) to develop the experiment because common tools for designing psychology experiment could not offer that much of flexibility for developing a videogame. The experiment was developed for a scientific collaboration with [Prof. Robert Biegler](https://www.ntnu.edu/employees/robert.biegler)'s lab at the department of psychology at Norwegian University of Science and Technology. 
+This is a evolutionary psychology experiment designed in a 2D video game form. I used [pygame](https://www.pygame.org/) to develop the experiment because common tools for designing psychology experiment could not offer that much of flexibility for developing a videogame-like experiment. The experiment was developed for a scientific collaboration with [Prof. Robert Biegler](https://www.ntnu.edu/employees/robert.biegler)'s lab at the department of psychology at Norwegian University of Science and Technology. 
 
 Among several moving circles, one circle chases the participant based on a variety. This vide of algorithms. The participant has to move its circle with the mouse to stay away from the chasing circle, if the it is detected. If the chasing circle arrives within a particular distance from the player's circle, the game (trial) is over. 
 
